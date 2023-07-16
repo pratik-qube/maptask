@@ -18,7 +18,7 @@ export const RouteProvider = ({ children }) => {
 
       try {
         const query = await fetch(
-          `https://api.mapbox.com/directions/v5/mapbox/driving/${waypointsStr}?steps=true&geometries=geojson&language=en&overview=full&access_token=sk.eyJ1IjoidHJpcHF1YmUiLCJhIjoiY2xrM3RuZ3dqMDB2NjNmbzdzY212MGlraiJ9.nKrsiNrdwmiRZ2MPIRrvdA`,
+          `https://api.mapbox.com/directions/v5/mapbox/driving/${waypointsStr}?steps=true&geometries=geojson&language=en&overview=full&access_token=sk.eyJ1IjoiZnNtcmMiLCJhIjoiY2xrNTNtYWlzMGUzdjNmbzdlMGdjcXBzcyJ9.iyQBoQm1d2qksAoWgmWKlw`,
           { method: "GET" }
         );
         const json = await query.json();
